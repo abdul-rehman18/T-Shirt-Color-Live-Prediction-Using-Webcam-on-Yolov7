@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+
+  <title>Image Prediction using PyTorch</title>
+</head>
+
+<body class="text-center">
+  <form class="form-signin card_res mb-6" method=post enctype=multipart/form-data>
+    <h1 class="h3 mb-3 font-weight-normal">Prediction:</h1>
+    <img class="img-fluid" src={{ url_for('static', filename=result_image ) }} alt="User_Image" max-width="100%"
+      height="auto">
+    <br>
+    <br>
+    <button type="submit" class="btn mb-4"> Test Another Image </button>
+  </form>
+
+
+  <div class="alert alert-success" role="alert"> Running with model: {{ model_name }} </div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/static/style.css">
+
+  <title>Flask App using Yolov7 models</title>
+</head>
+
+<body class="text-center">
+
+  <br>
+  <br>
+  <form class="form-signin card mb-6" action="/capture" method="post">
+      <h1 class="h3 mb-3 font-weight-normal">Webcam Capture</h1><br>
+      <button type="submit">Capture Image</button>
+  </form>
+  <br><br>
+  <form class="form-signin card mb-6" method=post enctype=multipart/form-data>
+    <h1 class="h3 mb-3 font-weight-normal">Upload Any Images</h1>
+    <input type="file" name="file" class="form-control-file" id="inputfile">
+    <br>
+    <button type="submit">Upload Image</button>
+  </form>
+  <br><br>
+  <!-- <form class="form-signin card mb-6"  method="post">
+    <h1 class="h3 mb-3 font-weight-normal">Live Detection</h1><br>
+    <button id="startButton" type="button">Start Live Detection</button>
+    <button id="stopButton" type="button" disabled>Stop</button>
+</form>
+
+<div id="video-container" style="display: none;">
+    <video id="video" autoplay></video>
+    <canvas id="canvas"></canvas>
+</div> -->
+<h1>Webcam Feed</h1>
+<img id="video_feed" src="{{ url_for('video_feed') }}" width="640" height="480">
+
+<!-- <video id="video" autoplay></video>
+<button id="startButton">Start Live Stream</button>
+<canvas id="canvas"></canvas> -->
+<br><br>
+
+</form>
+  <script type="text/javascript">
+    $('#inputfile').bind('change', function () {
+      let ext = $('#inputfile').val().split('.').pop().toLowerCase();
+      if ($.inArray(ext, ['jpg', 'jpeg']) == -1) {
+        $("#inputfile").val(null);
+        alert('only jpeg/jpg files are allowed!');
+      }
+    });
+    
+    </script>
+</body>
+</html>
