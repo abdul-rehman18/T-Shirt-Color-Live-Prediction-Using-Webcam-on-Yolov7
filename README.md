@@ -1,8 +1,5 @@
 # YOLOv7 Object Detection with Flask
 
-[![Video](https://img.shields.io/badge/Click%20to%20Watch-Video-red)](https://github.com/abdul-rehman18/T-Shirt-Color-Live-Prediction-Using-Webcam-on-Yolov7/blob/master/github_tshirt.mp4)
-
-
 This project demonstrates real-time object detection using the YOLOv7 model with a Flask web application. You can upload images or capture images from your webcam to perform object detection.
 
 ## Features
