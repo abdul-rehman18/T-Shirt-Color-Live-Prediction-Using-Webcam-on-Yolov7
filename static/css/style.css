@@ -1,0 +1,99 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.form-signin {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-control-file {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+button[type="submit"],
+button[type="button"] {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.box {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: #6c757d;
+  color: #fff;
+}
+
+#startButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#video {
+  display: none;
+}
+
+#canvas {
+  border: 2px solid #007bff;
+}
